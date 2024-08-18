@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="img/Iconos DEMCO verde.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!--encabezado ot-->
+    <section
+      class="cabecera needs-validation"
+      style="
+        border: 1px solid #96be25;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px #96be25;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+      "
+    >
+      <h5 class="p-3 mb-2" style="text-align: center">
+        PROTOCOLOS DE PRUEBAS FINALES CALDA METALCLAD
+      </h5>
+      <div id="miDiv">
+        <!--PROTOCOLOS DE PRUEBAS FINALES TABLERO-->
+        <table
+          id="miTabla"
+          class="table table-bordered table-striped"
+          style="display: inline-table"
+        >
+          <tbody>
+            <thead>
+              <tr>
+                <th
+                  colspan="12"
+                  style="text-align: center; background-color: gray"
+                >
+                  CARACTERISTICAS GENERALES
+                </th>
+              </tr>
+            </thead>
+            <tr class="tr-inline">
+              <td>OT</td>
+              <td>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="ot"
+                  name="ot"
+                  required
+                  maxlength="5"
+                  onkeypress="return validarNumerico(event)"
+                  placeholder=""
+                  required=""
+                />
+              </td>
+              <td>ITEM</td>
+              <td>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="item"
+                  name="item"
+                  required
+                  maxlength="5"
+                  onkeypress="return validarNumerico(event)"
+                  placeholder=""
+                  required=""
+                />
+              </td>
+              <td>CLIENTE</td>
+              <td>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="cliente"
+                  name="cliente"
+                  placeholder=""
+                  required=""
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>OBRA</td>
+              <td>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="obra"
+                  name="obra"
+                  placeholder=""
+                  required=""
+                />
+              </td>
+              <td>TIPO TABLERO</td>
+              <td>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="tipo_tablero"
+                  name="tipo_tablero"
+                  placeholder=""
+                  required=""
+                />
+              </td>
+              <td>FECHA</td>
+              <td>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="fecha"
+                  name="fecha"
+                  placeholder=""
+                  required=""
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section
+      class="cabecera needs-validation"
+      style="
+        border: 1px solid #96be25;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px #96be25;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+      "
+    >
+      <h5 class="p-3 mb-2" style="text-align: center">
+        DATOS TECNICOS EQUIPOS
+      </h5>
+
+      <div id="miDiv">
+        <!--DATOS TECNICOS EQUIPOS-->
+        <table
+          id="miTabla"
+          class="table table-bordered table-striped"
+          style="display: inline-table"
+        >
+          <tbody>
+            <thead>
+              <tr>
+                <th
+                  colspan="12"
+                  style="text-align: center; background-color: gray"
+                ></th>
+              </tr>
+            </thead>
+            <tr class="tr-inline">
+              <td>Marca Transformadores de Corriente (TC´S)</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+              <td>Marca Transformadores de Tensión (TP´S)</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+            </tr>
+            <tr class="tr-inline">
+              <td>Modelo / Tipo. Transformadores de Corriente</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+              <td>Modelo / Tipo. Transformadores de Tensión</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+            </tr>
+            <tr class="tr-inline">
+              <td>Marca / Referencia Interruptor</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+              <td>Fecha de Fabricación tc´s</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+            </tr>
+            <tr class="tr-inline">
+              <td>Marca / Referencia Rele falla a tierra</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+              <td>Fecha de Fabricación tp´s</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+            </tr>
+            <tr class="tr-inline">
+              <td>Corriente Nominal de operación</td>
+              <td colspan="2">
+                <input type="text" onkeypress="return validarNumerico(event)" />
+              </td>
+              <td>Voltaje Nominal de operación y control</td>
+              <td colspan="2">
+                <input type="text" onkeypress="return validarNumerico(event)" />
+              </td>
+            </tr>
+            <tr class="tr-inline">
+              <td>Corriente de Corto Circuito</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr
+          class="my-4"
+          style="margin-top: 20px; margin-left: 1px; margin-right: 1px"
+        />
+
+        <!--INSPECCIÓN DE INTERRUPTOR-->
+        <table id="miTabla" class="table table-bordered table-striped">
+          <h5 class="p-3 mb-2" style="text-align: center">
+            INSPECCIÓN DE INTERRUPTOR
+          </h5>
+          <tbody>
+            <thead>
+              <tr>
+                <th
+                  colspan="6"
+                  style="text-align: center; background-color: gray"
+                ></th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                Inspeccion visual del interruptor y/o elemetos que lo <br />
+                componen, Bobinas, contactos, accesorios, etc
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>El enclavamiento mecánico opera correctamente?</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                El procedimiento de insercción y extracción del interruptor
+                funciona correctamente?
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>La palanca de carga del resorte opera correctamente?</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Inspección del Voltaje elementos de Control (Bobinas, etc)
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Libre de conexiones riesgosas</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr
+          class="my-4"
+          style="margin-top: 20px; margin-left: 1px; margin-right: 1px"
+        />
+
+        <!--PRUEBA DE OPERACIÓN MANUAL DESDE BOTONES DE MANDO FRONTAL DEL INTERRUPTOR-->
+        <table id="miTabla" class="table table-bordered table-striped">
+          <h5 class="p-3 mb-2" style="text-align: center">
+            PRUEBA DE OPERACIÓN MANUAL DESDE BOTONES DE MANDO FRONTAL DEL
+            INTERRUPTOR
+          </h5>
+          <tbody>
+            <thead>
+              <tr>
+                <th
+                  colspan="6"
+                  style="text-align: center; background-color: gray"
+                ></th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                Resorte cargado por medio de la palanca y ventana de indicación
+                en posición <b>"CHARGE"</b><br />
+                Indicación de posición del interruptor <b>(QT) "OPEN"</b>
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                En el Interruptor <b>(QT)</b> operaramos el pulsador verde y
+                cierra el interruptor <br />
+                Indicación de posición del interruptor de color rojo "<b
+                  >CLOSED"</b
+                >
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Resorte de Interruptor <b>(QT)</b> descargado</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Al operar el pulsador rojo se abre el interruptor <br />
+                Indicación de posición del interruptor <b>"OPEN"</b> Resorte
+                descargado
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Prueba satisfactoria</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr
+          class="my-4"
+          style="margin-top: 20px; margin-left: 1px; margin-right: 1px"
+        />
+
+        <div
+          class="form-floating mb-3"
+          style="margin-top: 20px; margin-left: 10px; margin-right: 10px"
+        >
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2"
+            style="height: 100px"
+          ></textarea>
+          <label for="floatingTextarea2">Observaciones</label>
+        </div>
+        <hr
+          class="my-4"
+          style="margin-top: 20px; margin-left: 1px; margin-right: 1px"
+        />
+
+        <!--INSPECCIÓN Y PRUEBAS ELÉCTRICAS-->
+        <table id="miTabla" class="table table-bordered table-striped">
+          <h5 class="p-3 mb-2" style="text-align: center">
+            INSPECCIÓN Y PRUEBAS ELÉCTRICAS
+          </h5>
+          <tbody>
+            <thead>
+              <tr>
+                <th
+                  colspan="6"
+                  style="text-align: center; background-color: gray"
+                ></th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Verificación de el equipo Instalado</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Verificación de conexiones de los Equipos instalados</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Verificación de Instalación de barras para Fases, Neutro y
+                Tierra
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Instalación y cableado de relé de Falla a Tierra</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Instalación y cableado del analizador de redes</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Instalación y funcionamento de lámpara de Iluminación Cubículo
+                de control
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Instalación y funcionamento de control para sistema calefacción
+                de Celda
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Verificación de control de disparo de interruptor por apertura
+                de puertas, falla a tierra, etc
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Verificación del cableado de control y funcionamiento del
+                sistema en general
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Los reles se encuentran Programados según la relación de los
+                TC's
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Instalación deTransformadores de potencial (TP´s) cumplen con la
+                relación según planos
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Verificación del cabledo deTransformadores de potencial (TP´s)
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Instalación deTransformadores de corriente (TC´s) cumplen con la
+                relación según planos
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Verificación del cabledo deTransformadores de corriente (TC´s)
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Los bornes secundarios de TC´s y TP´s se observan y se <br />
+                pueden intervenir fácilmente
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Los TC´s poseen dos? El (los) núcleo (s) de protección va hacia
+                el Relé de falla <br />
+                a tierra y el núcleo de medida al analizador de redes o se
+                encuentra cortocircuitado
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Celda libre de conexiones riesgosas, cumple con las <br />
+                distancias de seguridad
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Las puertas poseen trenza de tierra y la Celda está debidamente
+                aterrizada
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Equipo instalado VS planos, marcación de equipos interna y
+                externa, maración de control
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Se ha realizado todo el protocolo,los formatos están totalmente
+                diligenciados
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr
+          class="my-4"
+          style="margin-top: 20px; margin-left: 1px; margin-right: 1px"
+        />
+
+        <!--INSPECCIÓN Y PRUEBAS MECÁNICAS-->
+        <table id="miTabla" class="table table-bordered table-striped">
+          <h5 class="p-3 mb-2" style="text-align: center">
+            INSPECCIÓN Y PRUEBAS MECÁNICAS
+          </h5>
+          <tbody>
+            <thead>
+              <tr>
+                <th
+                  colspan="6"
+                  style="text-align: center; background-color: gray"
+                ></th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                Inspección de la celda, cumple con el tipo de Pintura, terminado
+                y color Solicitados
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Las puertas se encuentran abriendo y cerrando bien</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>La Celda Posee Visores</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>La Celda Posee Empaques</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                La capacidad del cobre está acorde con lo solicitado, se
+                encuentra redondeado
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Posee la tornillería apropiada, completa y está bien apretada
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Aisladores, termoencogibles, baquela y/o material Aislante
+                apropiados y en buen estado
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Funcionamiento mecánico de sistemas de bloqueo, puertas,
+                cerraduras, microsuiches u otros <br />
+                elementos destinados a ser operados durante el uso normal de la
+                Celda
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Cumple con Dimensiones y tipo de Construcción según norma</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Funcionameinto de accesorios adicionales y en buen estado</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                La construcción esta acorde con los planos entregados por
+                ingeniería
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>La Celda Posee placas y calcomanías según norma</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>Instalación de Mímico</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Se ha realizado correctamente el protocolo de verificación
+                mecánica
+              </td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr
+          class="my-4"
+          style="margin-top: 20px; margin-left: 1px; margin-right: 1px"
+        />
+
+        <!--MANIOBRA-->
+        <table
+          id="miTabla"
+          class="table table-bordered table-striped"
+          style="display: inline-table"
+        >
+          <tbody>
+            <thead>
+              <tr>
+                <th
+                  colspan="12"
+                  style="text-align: center; background-color: gray"
+                >
+                  SISTEMA ELECTRICO
+                </th>
+              </tr>
+            </thead>
+            <tr class="tr-inline">
+              <td>Tension de Servicio</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+              <td>Corriente Nominal de Operación</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+            </tr>
+            <tr class="tr-inline">
+              <td>Frecuencia</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+              <td>Tension(es) de Control</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr
+          class="my-4"
+          style="margin-top: 20px; margin-left: 1px; margin-right: 1px"
+        />
+
+        <!--CARACTERISTICAS CONSTRUCTIVAS-->
+        <table
+          id="miTabla"
+          class="table table-bordered table-striped"
+          style="display: inline-table"
+        >
+          <tbody>
+            <thead>
+              <tr>
+                <th
+                  colspan="12"
+                  style="text-align: center; background-color: gray"
+                >
+                  CARACTERISTICAS CONSTRUCTIVAS
+                </th>
+              </tr>
+            </thead>
+            <tr></tr>
+            <tr class="tr-inline">
+              <td>Tipo de Celda</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+              <td>Tipo de Lamina</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+            </tr>
+            <tr class="tr-inline">
+              <td>Calibre</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+              <td>Color</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+            </tr>
+            <tr class="tr-inline">
+              <td>Grados de Protección</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+              <td>Medida de Zocalo</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+            </tr>
+            <tr class="tr-inline">
+              <td>Medidas del Tablero</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+              <td>Medidas del Tablero</td>
+              <td colspan="2">
+                <input type="text" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr
+          class="my-4"
+          style="margin-top: 20px; margin-left: 1px; margin-right: 1px"
+        />
+
+        <!--COBRE Y MANIOBRA-->
+        <table id="miTabla" class="table table-bordered table-striped">
+          <h5 class="p-3 mb-2" style="text-align: center">
+            INSPECCIÓN Y PRUEBAS MECÁNICAS
+          </h5>
+          <tbody>
+            <thead>
+              <tr>
+                <th
+                  colspan="6"
+                  style="text-align: center; background-color: gray"
+                ></th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Tipo de Maniobra</td>
+              <td>
+                <label for="">Local</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">Remota</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">Ninguna</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Acabado del cobre</td>
+              <td>
+                <label for="">Rojo</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">Aislado</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">Pintado</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Cobre Electroplatado</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Iluminación</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Calefacción</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr
+          class="my-4"
+          style="margin-top: 20px; margin-left: 1px; margin-right: 1px"
+        />
+
+        <!--INSPECCIÓN Y PRUEBAS ELÉCTRICAS-->
+        <table id="miTabla" class="table table-bordered table-striped">
+          <h5 class="p-3 mb-2" style="text-align: center">
+            INSPECCIÓN Y PRUEBAS ELÉCTRICAS
+          </h5>
+          <tbody>
+            <thead>
+              <tr>
+                <th
+                  colspan="6"
+                  style="text-align: center; background-color: gray"
+                >
+                  SISTEMA DE CABLEDO ELÉCTRICO
+                </th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Cableado de Transformadores de control</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Cableado de Transformadores de corriente</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Cableado de Transformadores de potencial</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Cableado de Calefacción</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Cableado de Extracción y/o Ventilación</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Cableado de Iluminación</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Cableado de interconexión entre tableros</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+              <td>Enclavamientos eléctricos</td>
+              <td>
+                <label for="">SI</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">NO</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+              <td>
+                <label for="">N/A</label>
+                <input type="checkbox" class="seleccionar" />
+              </td>
+            </tr>
+            <tr>
+                <td>Continuidad eléctrica de cableado de control según Diagramas eléctricos</td>
+                <td>
+                  <label for="">SI</label>
+                  <input type="checkbox" class="seleccionar" />
+                </td>
+                <td>
+                  <label for="">NO</label>
+                  <input type="checkbox" class="seleccionar" />
+                </td>
+                <td>
+                  <label for="">N/A</label>
+                  <input type="checkbox" class="seleccionar" />
+                </td>
+            </tr>
+            <tr>
+                <td>Continuidad eléctrica de cableado de potencia según Diagramas eléctrico</td>
+                <td>
+                  <label for="">SI</label>
+                  <input type="checkbox" class="seleccionar" />
+                </td>
+                <td>
+                  <label for="">NO</label>
+                  <input type="checkbox" class="seleccionar" />
+                </td>
+                <td>
+                  <label for="">N/A</label>
+                  <input type="checkbox" class="seleccionar" />
+                </td>
+            </tr>
+            <tr>
+                <td>Ajuste y ponchado de terminales para cables de potencia y control</td>
+                <td>
+                  <label for="">SI</label>
+                  <input type="checkbox" class="seleccionar" />
+                </td>
+                <td>
+                  <label for="">NO</label>
+                  <input type="checkbox" class="seleccionar" />
+                </td>
+                <td>
+                  <label for="">N/A</label>
+                  <input type="checkbox" class="seleccionar" />
+                </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr
+          class="my-4"
+          style="margin-top: 20px; margin-left: 1px; margin-right: 1px"
+        />
+
+        <!--FIRMAS-->
+        <table id="miTabla" class="table table-bordered table-striped">
+          <tbody>
+
+              <tr class="tr-inline">
+                  <td>NUMERO FALLAS ENCONTRADAS</td>
+                  <td colspan="2">
+                      <input type="text" onkeypress="return validarNumerico(event)">
+                  </td>
+                  <td><label for="fecha">FECHA</label></td>
+                  <td colspan="2">
+                      <input type="date" id="fecha" name="fecha">
+                  </td>
+              </tr>
+
+              <tr class="tr-inline">
+                  <td>EJECUTÓ</td>
+                  <td colspan="2">
+                      <select id="opciones" onchange="cargarFirma(this)">
+                          <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                          <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                          <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                          <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                      </select>
+                      <img class="firmaImagen" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                      <img class="firmaImagen" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                      <img class="firmaImagen" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                  </td>
+                  <td>REVISÓ</td>
+                  <td colspan="2">
+                      <select id="opciones" onchange="cargarFirma1(this)">
+                          <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                          <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                          <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                          <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                      </select>
+                      <img class="firmaImagen1" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                      <img class="firmaImagen1" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                      <img class="firmaImagen1" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                  </td>
+              </tr>
+              <tr class="tr-inline">
+                  <td>APROBÓ</td>
+                  <td colspan="2">
+                      <select id="opciones" onchange="cargarFirma2(this)">
+                          <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                          <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                          <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                          <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                      </select>
+                      <img class="firmaImagen2" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                      <img class="firmaImagen2" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                      <img class="firmaImagen2" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+      <hr class="my-4" style="margin-top: 20px; margin-left: 1px; margin-right: 1px;">
+      
+      <!--FIRMAS DESPACHO-->
+      <table id="miTabla" class="table table-bordered table-striped">
+          <tbody>
+
+              <thead>
+                  <tr>
+                      <th colspan="4" style="text-align: center; background-color: gray;">REVISIÓN FINAL INGENIERÍA</th>
+                      <th colspan="4" style="text-align: center; background-color: gray;">REVISIÓN FINAL CALIDAD</th>
+                  </tr>
+              </thead>
+
+              <tr class="tr-inline">
+                  <td>APROBÓ</td>
+                  <td colspan="2">
+                      <select id="opciones" onchange="cargarFirma3(this)">
+                          <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                          <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                          <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                          <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                      </select>
+                      <img class="firmaImagen3" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                      <img class="firmaImagen3" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                      <img class="firmaImagen3" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                  </td>
+                  <td>AUTORIZA DESPACHO</td>
+                  <td colspan="2">
+                          <select id="opciones" onchange="cargarFirma4(this)">
+                              <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                              <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                              <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                              <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                          </select>
+                          <img class="firmaImagen4" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                          <img class="firmaImagen4" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                          <img class="firmaImagen4" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                  </td>
+              </tr>
+
+              <tr class="tr-inline">
+                  <td>RECHAZADO</td> 
+                      <td colspan="2">
+                          <select id="opciones" onchange="cargarFirma5(this)">
+                              <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                              <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                              <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                              <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                          </select>
+                          <img class="firmaImagen5" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                          <img class="firmaImagen5" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                          <img class="firmaImagen5" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                      </td>
+              </tr>
+          </tbody>
+      </table>
+      </div>
+    </section>
+
+    <div class="btn-container">
+      <button
+        id="guardar"
+        type="button"
+        class="btn btn-primary mb-3"
+        onclick="imprimir()"
+      >
+        GUARDAR
+      </button>
+    </div>
+  </body>
+</html>

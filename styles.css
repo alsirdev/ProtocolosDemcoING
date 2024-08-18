@@ -1,0 +1,208 @@
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(17 24 39);
+  }
+
+.encabezado{
+    display: flex;
+    width: auto;
+    color: white;
+    height: 60px;
+    border: 1px solid #37415166;
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    width: 120px;
+    margin-left: 20px;
+}
+
+.encabezado .logo{
+    margin-right: 10px;
+}
+
+.top-menu{
+    float: right;
+    margin-top: 10px;
+}
+
+/******* menu superior 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #37415166;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*estilos distribucion
+
+.cabecera {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    width: 90%;
+    max-width: auto;
+    position: relative;
+    margin: 10px auto;
+    padding: 10px 40px;
+    border: 2px solid #96be25;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #96be25;
+}
+
+.label_titulo{
+    color: white;
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 20%;
+}
+
+.input_titulos{
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    margin: 25px 0 0 0;
+    width: 20%;
+    background: transparent;
+    border-color: transparent;
+    border-bottom:1px solid #2551be;
+    border-right: none;
+    font-size: 14px;
+    outline: none;
+    line-height: 25px;
+    padding: 0 10px;
+    transition: all 1s;
+}
+
+.caracteristicas-generales{
+    width: 90%;
+    max-width: auto;
+    position: relative;
+    margin: 25px auto;
+    padding: 10px 40px;
+    border: 2px solid #96be25;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #96be25;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+/* responsive de la pagina
+
+@media screen and (max-width: 600px) {
+    .input_titulos, .label_titulo {
+        width: calc(100% - 20px); /* Cambiado para pantallas pequeñas 
+    }
+}*/
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    border: 1px solid #504e4e;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #535455;
+}
+
+#miDiv {
+    width: 90%; /* Ancho deseado del div */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 2px; /* Espacio interior opcional */
+}
+
+.container {
+    text-align: center;
+  }
+
+.textarea-container {
+    width: 90%;
+    margin: 0 auto; /* Esto centrará el div horizontalmente */
+}
+
+.btn-container {
+    width: 90%;
+    margin: 10px auto; /* Esto centrará el contenedor horizontalmente */
+    text-align: center; /* Esto centrará el botón dentro del contenedor */
+}
+
+.firmaImagen, .firmaImagen1, .firmaImagen2, .firmaImagen3,.firmaImagen4, .firmaImagen5 {
+    display: none;
+}
+
+ /* Responsive CSS */
+ @media only screen and (max-width: 800px) {
+    /* Hide the table headers */
+    #miTabla thead {
+        display: none;
+    }
+
+    /* Make table rows display as blocks */
+    #miTabla tbody, #miTabla tr, #miTabla td {
+        display: block;
+    }
+
+    /* Add some spacing between table cells */
+    #miTabla td {
+        margin-bottom: 10px;
+    }
+
+    /* Set the table cell width to 100% */
+    #miTabla td {
+        width: 100%;
+    }
+
+    /* Adjust the appearance of the select dropdown and images */
+    #miTabla select, #miTabla img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto; /* Center align the images */
+        display: block;
+    }
+}
+
+@media print {
+    #contenido {
+        margin-top: 20mm; /* Margen en la parte superior */
+        margin-bottom: 05mm; /* Margen en la parte inferior */
+    }
+}

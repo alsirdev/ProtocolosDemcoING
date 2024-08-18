@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/Iconos DEMCO verde.png">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!--encabezado ot-->
+    <section class="cabecera needs-validation" style="border: 1px solid #96be25; border-radius: 5px; box-shadow: 0 2px 10px #96be25; margin-top: 20px; margin-left: 10px; margin-right: 10px;">
+
+        <h5 class="p-3 mb-2" style="text-align: center;">PROTOCOLOS DE PRUEBAS FINALES TABLERO TRANSFERENCIAS MOTORIZADAS</h5>
+    
+        <div id="miDiv">
+            <!--PROTOCOLOS DE PRUEBAS FINALES TABLERO-->
+            <table id="miTabla" class="table table-bordered table-striped" style="display: inline-table;">
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="12" style="text-align: center; background-color: gray;">CARACTERISTICAS GENERALES</th>
+                        </tr>
+                    </thead>
+                    <tr class="tr-inline">
+                        <td>OT</td>
+                        <td>
+                            <input class="form-control" type="text" id="ot" name="ot" required maxlength="5" onkeypress="return validarNumerico(event)" placeholder="" required="">
+                        </td>
+                        <td>ITEM</td>
+                        <td>
+                            <input class="form-control" type="text" id="item" name="item" required maxlength="5" onkeypress="return validarNumerico(event)" placeholder="" required="">
+                        </td>
+                        <td>CLIENTE</td>
+                        <td>
+                            <input class="form-control" type="text" id="cliente" name="cliente" placeholder="" required="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>OBRA</td>
+                        <td>
+                            <input class="form-control" type="text" id="obra" name="obra" placeholder="" required="">
+                        </td>
+                        <td>TIPO TABLERO</td>
+                        <td>
+                            <input class="form-control" type="text" id="tipo_tablero" name="tipo_tablero" placeholder="" required="">
+                        </td>
+                        <td>FECHA</td>
+                        <td>
+                            <input class="form-control" type="text" id="fecha" name="fecha" placeholder="" required="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="cabecera needs-validation" 
+        style="border: 1px solid #96be25; 
+        border-radius: 5px; box-shadow: 0 2px 10px 
+        #96be25; margin-top: 20px; margin-left: 10px; 
+        margin-right: 10px;">
+
+        <h5 class="p-3 mb-2" style="text-align: center;">OPERACIÓN Y FUNCIONAMIENTO</h5>
+
+        <div id="miDiv">
+
+            <!--DATOS TECNICOS DEL INTERRUPTOR-->
+            <table id="miTabla" class="table table-bordered table-striped" style="display: inline-table;">
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="6" style="text-align: center; background-color: gray;">DATOS TECNICOS DEL INTERRUPTOR</th>
+                        </tr>
+                    </thead>
+                    <tr class="tr-inline">
+                        <td>Modelo/ Tipo</td>
+                        <td colspan="2">
+                            <input type="text">
+                        </td>
+                        <td>Marca</td>
+                        <td colspan="2">
+                            <input type="text">
+                        </td>
+                        
+                    </tr>
+                    <tr class="tr-inline">
+                        <td>Voltaje Nominal de Operación</td>
+                        <td colspan="2">
+                            <input type="text">
+                        </td>
+                        <td>Voltaje elementos Control (Motor, Bobinas)</td>
+                        <td colspan="2">
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr class="tr-inline">
+                        <td>Corriente de Corto Circuito</td>
+                        <td colspan="2">
+                            <input type="text">
+                        </td>
+                        <td>Frecuencia Nominal de operación</td>
+                        <td colspan="2">
+                            <input type="text" onkeypress="return validarNumerico(event)">
+                        </td>
+                        
+                    </tr>
+                    <tr class="tr-inline">
+                        <td>Año Fabricación Interruptor de Red (QN)</td>
+                        <td colspan="2">
+                            <input type="text" onkeypress="return validarNumerico(event)">
+                        </td>
+                        <td>No de Serie  Interruptor de Red (QN)</td>
+                        <td colspan="2">
+                            <input type="text" onkeypress="return validarNumerico(event)">
+                        </td>
+                        
+                    </tr>
+                    <tr class="tr-inline">
+                        <td>Año Fabricación Interruptor de Planta (QE)</td>
+                        <td colspan="2">
+                            <input type="text" onkeypress="return validarNumerico(event)">
+                        </td>
+                        <td>No de Serie  Interruptor de Planta (QE)</td>
+                        <td colspan="2">
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr class="tr-inline">
+                        <td>Tensión de Aislamiento</td>
+                        <td colspan="2">
+                            <input type="text" onkeypress="return validarNumerico(event)">
+                        </td>
+                        <td>No. Operaciones.</td>
+                        <td colspan="2">
+                            <input type="text" onkeypress="return validarNumerico(event)">
+                        </td>
+                    </tr>
+                    <tr class="tr-inline">
+                        <td>No de Serie  Interruptor de Planta (QE)</td>
+                        <td colspan="2">
+                            <input type="text">
+                        </td>
+                        <td>Tensión de Aislamiento</td>
+                        <td colspan="2">
+                            <input type="text" onkeypress="return validarNumerico(event)">
+                        </td>
+                    </tr>
+                    <tr class="tr-inline">
+                        <td>No. Operaciones.</td>
+                        <td colspan="2">
+                            <input type="text" onkeypress="return validarNumerico(event)">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class="my-4" style="margin-top: 20px; margin-left: 1px; margin-right: 1px;">
+
+            <!--INSPECCIÓN DE LOS INTERRUPTORES-->
+            <table id="miTabla" class="table table-bordered table-striped">
+                <h5 class="p-3 mb-2" style="text-align: center;">INSPECCIÓN DE LOS INTERRUPTORES</h5>
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="6" style="text-align: center; background-color: gray;"></th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Inspeccion visual del interruptor</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                    <tr>
+                        <td>La palanca de carga del resorte opera correctamente?</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Inspección de la celda</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Prueba de lámparas de señalización verde</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Interruptores de control estan apagados</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Libre de conexiones riesgosas</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>La puertas se encuentran bien</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Prueba de los elementos de control</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Las chapas cierran adecuadamente</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>El enclavamiento mecánico opera correctamente?</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Se ha realizado todo el protocolo</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Inspección del Voltaje elementos de Control (Bobinas, etc)</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class="my-4" style="margin-top: 20px; margin-left: 1px; margin-right: 1px;">
+
+            <!--PRUEBA DE OPERACIÓN MANUAL DESDE EL MANDO FRONTAL DEL INTERRUPTOR-->
+            <table id="miTabla" class="table table-bordered table-striped">
+                <h5 class="p-3 mb-2" style="text-align: center;">PRUEBA DE OPERACIÓN MANUAL DESDE EL MANDO FRONTAL DEL INTERRUPTOR</h5>
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="6" style="text-align: center; background-color: gray;"></th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td>Resortes cargados por medio de la palanca y ventana de indicación en posición <b>"CHARGE"</b><br> 
+                            Indicación de posición de interruptores <b>(QN) y (QE) "OPEN"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                    <tr>
+                        <td>En el Interruptor de Red <b>(QN)</b> operaramos el pulsador verde y cierra el interruptor.<br>
+                            Indicación de posición del interruptor de color rojo <b>"CLOSED"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                    <tr>
+                        <td>Resorte de Interruptor <b>(QN)</b> descargado</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Intentamos operar el pulsador verde en el Interruptor de Planta <b>(QE)</b> y este no debe cerrar</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Al operar el pulsador rojo se abre el interruptor. Indicación de posición del interruptor<br> 
+                            <b>"OPEN"</b>. Resorte descargado</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Resortes cargados por medio de la palanca y ventana de indicación en posición <b>"CHARGE"</b><br>
+                            Indicación de posición de interruptores <b>(QN) y (QE) "OPEN"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>En el Interruptor de Planta <b>(QE)</b> operaramos el pulsador verde y cierra el interruptor<br>
+                            Indicación de posición del interruptor de color rojo <b>"CLOSED"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Resorte de Interruptor <b>(QE)</b> descargado</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Intentamos operar el pulsador verde en el Interruptor de Planta <b>(QN)</b> y este no debe cerrar</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Al operar el pulsador rojo se abre el interruptor <b>(QE)</b>. Indicación de posición del interruptor<br>
+                            <b>"OPEN"</b>. Resorte descargado</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Prueba satisfactoria</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class="my-4" style="margin-top: 20px; margin-left: 1px; margin-right: 1px;">
+
+            <!--PRUEBA DE OPERACIÓN DESDE SELECTORES HACIA CADA INTERRUPTOR-->
+            <table id="miTabla" class="table table-bordered table-striped">
+                <h5 class="p-3 mb-2" style="text-align: center;">PRUEBA DE OPERACIÓN DESDE SELECTORES HACIA CADA INTERRUPTOR</h5>
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="6" style="text-align: center; background-color: gray;"></th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td>Con el selector <b>"MAN OFF AUTO"</b> en posición <b>"MAN"</b> se deshabilita el relé de transferencia y <br>
+                            se habilita el otro selector <b>"RED OFF PLANTA"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                    <tr>
+                        <td>Resorte cargado por medio del motor y ventana de indicación en posición <b>"CHARGE"</b><br>
+                            (Indicación de posición del interruptor <b>"OPEN"</b>)</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                    <tr>
+                        <td>Al llevar el selector de mando a la posición <b>"RED"</b> se cierra el interruptor de Red<br>
+                            (Indicación de posición del interruptor: <b>"CLOSE"</b>)</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Al cerrar el interruptor de Red enciende el piloto de señalización <b>"RED CERRADO"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Al llevar el selector de mando a la posición <b>"OFF"</b> open se abre el interruptor
+                            que se encuentre cerrado en el momento. (Indicación de posición del interruptor <b>"OPEN"</b>)</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Al llevar el selector de mando a la posición <b>"PLANTA"</b> se cierra el interruptor de Planta<br>
+                            (Indicación de posición del interruptor <b>"CLOSE"</b>).</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Al cerrar el interruptor de Planta enciende el piloto de señalización <b>"PLANTA CERRADO"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Con el selector "MAN OFF AUTO" en posición <b>"AUTO"</b> 
+                            se habilita el relé de transferencia y se deshabilita el otro selector <b>"RED OFF PLANTA"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Prueba satisfactoria</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                </tbody>
+            </table>            
+            <hr class="my-4" style="margin-top: 20px; margin-left: 1px; margin-right: 1px;">
+
+            <!--PRUEBA DE OPERACIÓN SIMULADA AUTOMATICA DESDE EL RELÉ DE TRANSFERENCIA-->
+            <table id="miTabla" class="table table-bordered table-striped">
+                <h5 class="p-3 mb-2" style="text-align: center;">PRUEBA DE OPERACIÓN SIMULADA AUTOMATICA DESDE EL RELÉ DE TRANSFERENCIA</h5>
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="6" style="text-align: center; background-color: gray;"></th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td>Verificamos interruptor Abierto. Indicación de posición del interruptor <b>"OPEN"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                    <tr>
+                        <td>Con el selector <b>"MAN OFF AUTO"</b> en posición <b>"AUTO"</b> se habilita el relé de transferencia<br>
+                            para operación en automático.</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                    <tr>
+                        <td>Resorte cargado por medio del motor y ventana de indicación en posición <b>"CHARGE"</b><br>
+                            Indicación de posición del interruptor <b>"OPEN"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Se cierra el interruptor de Red <b>(QN)</b> Automaticamente desde el relé de trasnferencia<br>
+                            Indicación de posición del interruptor <b>"CLOSE"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Abrimos minibreaker de control <b>"Q1"</b> simulando ausencia de tensión por red.</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>El interruptor de Red <b>(QN)</b> se abre automaticamente desde el relé de transferencia <br>
+                            Resorte cargado por medio del motor y ventana de indicación en posición <b>"CHARGE"</b><br>
+                            Indicación de posición del interruptor <b>"OPEN"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>El relé de transferencia envía confirmación de encendido para la planta de emergencia</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Luego de confirmar tensión se cierra el interruptor de Planta <b>(QE)</b><br>
+                            Automaticamente desde el relé de trasnferencia. Indicación de posición del interruptor <b>"CLOSE"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Cerramos minibreaker de control <b>"Q1"</b> simulando el retorno de tensión por red preferencial</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>El interruptor de planta <b>(QE)</b> se abre automaticamente desde el relé de transferencia <br>
+                            Resorte cargado por medio del motor y ventana de indicación en posición <b>"CHARGE"</b> <br>
+                            Indicación de posición del interruptor <b>"OPEN"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Luego de confirmar el retorno de tensión preferencial <br>
+                            se cierra el interruptor de Red <b>(QN)</b> Automaticamente desde el relé de trasnferencia <br>
+                            Indicación de posición del interruptor <b>"CLOSE"</b></td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Prueba satisfactoria</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">BIEN</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">MAL</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class="my-4" style="margin-top: 20px; margin-left: 1px; margin-right: 1px;">
+
+            <div class="form-floating mb-3" style="margin-top: 20px; margin-left: 10px; margin-right: 10px;">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Observaciones</label>
+            </div>
+            <hr class="my-4" style="margin-top: 20px; margin-left: 1px; margin-right: 1px;">
+
+            <!--FIRMAS-->
+            <!--FIRMAS-->
+            <table id="miTabla" class="table table-bordered table-striped">
+                <tbody>
+
+                    <tr class="tr-inline">
+                        <td>NUMERO FALLAS ENCONTRADAS</td>
+                        <td colspan="2">
+                            <input type="text" onkeypress="return validarNumerico(event)">
+                        </td>
+                        <td><label for="fecha">FECHA</label></td>
+                        <td colspan="2">
+                            <input type="date" id="fecha" name="fecha">
+                        </td>
+                    </tr>
+
+                    <tr class="tr-inline">
+                        <td>EJECUTÓ</td>
+                        <td colspan="2">
+                            <select id="opciones" onchange="cargarFirma(this)">
+                                <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                                <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                                <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                                <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                            </select>
+                            <img class="firmaImagen" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                            <img class="firmaImagen" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                            <img class="firmaImagen" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                        </td>
+                        <td>REVISÓ</td>
+                        <td colspan="2">
+                            <select id="opciones" onchange="cargarFirma1(this)">
+                                <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                                <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                                <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                                <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                            </select>
+                            <img class="firmaImagen1" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                            <img class="firmaImagen1" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                            <img class="firmaImagen1" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                        </td>
+                    </tr>
+                    <tr class="tr-inline">
+                        <td>APROBÓ</td>
+                        <td colspan="2">
+                            <select id="opciones" onchange="cargarFirma2(this)">
+                                <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                                <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                                <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                                <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                            </select>
+                            <img class="firmaImagen2" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                            <img class="firmaImagen2" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                            <img class="firmaImagen2" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class="my-4" style="margin-top: 20px; margin-left: 1px; margin-right: 1px;">
+            
+            <!--FIRMAS DESPACHO-->
+            <table id="miTabla" class="table table-bordered table-striped">
+                <tbody>
+
+                    <thead>
+                        <tr>
+                            <th colspan="4" style="text-align: center; background-color: gray;">REVISIÓN FINAL INGENIERÍA</th>
+                            <th colspan="4" style="text-align: center; background-color: gray;">REVISIÓN FINAL CALIDAD</th>
+                        </tr>
+                    </thead>
+
+                    <tr class="tr-inline">
+                        <td>APROBÓ</td>
+                        <td colspan="2">
+                            <select id="opciones" onchange="cargarFirma3(this)">
+                                <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                                <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                                <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                                <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                            </select>
+                            <img class="firmaImagen3" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                            <img class="firmaImagen3" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                            <img class="firmaImagen3" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                        </td>
+                        <td>AUTORIZA DESPACHO</td>
+                        <td colspan="2">
+                                <select id="opciones" onchange="cargarFirma4(this)">
+                                    <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                                    <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                                    <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                                    <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                                </select>
+                                <img class="firmaImagen4" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                                <img class="firmaImagen4" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                                <img class="firmaImagen4" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                        </td>
+                    </tr>
+
+                    <tr class="tr-inline">
+                        <td>RECHAZADO</td> 
+                            <td colspan="2">
+                                <select id="opciones" onchange="cargarFirma5(this)">
+                                    <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                                    <option value="JESUS_GUZMAN.png">Jesus Guzman</option>
+                                    <option value="JUAN_RAIGOSA.png">Juan Raigosa</option>
+                                    <option value="Firma_Bairon.jpeg">Bairon Gutierrez</option>
+                                </select>
+                                <img class="firmaImagen5" src="./img/JESUS_GUZMAN.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                                <img class="firmaImagen5" src="./img/JUAN_RAIGOSA.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                                <img class="firmaImagen5" src="./img/Firma_Bairon.jpeg" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div class="btn-container">
+        <button
+          id="guardar"
+          type="button"
+          class="btn btn-primary mb-3"
+          onclick="imprimir()"
+        >
+          GUARDAR
+        </button>
+    
+    
+</body>
+</html>

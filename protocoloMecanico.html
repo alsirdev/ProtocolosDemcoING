@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/Iconos DEMCO verde.png">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!--encabezado ot-->
+    <section class="cabecera needs-validation" style="border: 1px solid #96be25; border-radius: 5px; 
+        box-shadow: 0 2px 10px #96be25; margin-top: 20px; margin-left: 10px; margin-right: 10px;">
+        <h5 class="p-3 mb-2" style="text-align: center;">PROTOCOLOS DE PRUEBAS FINALES TABLERO</h5>
+        <div id="miDiv">
+            <!--PROTOCOLOS DE PRUEBAS FINALES TABLERO-->
+            <table id="miTabla" class="table table-bordered table-striped" style="display: inline-table;">
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="12" style="text-align: center; background-color: gray;">CARACTERISTICAS GENERALES</th>
+                        </tr>
+                    </thead>
+                    <tr class="tr-inline">
+                        <td>OT</td>
+                        <td>
+                            <input class="form-control" type="text" id="ot" name="ot" required maxlength="5" onkeypress="return validarNumerico(event)" placeholder="" required="">
+                        </td>
+                        <td>ITEM</td>
+                        <td>
+                            <input class="form-control" type="text" id="item" name="item" required maxlength="5" onkeypress="return validarNumerico(event)" placeholder="" required="">
+                        </td>
+                        <td>CLIENTE</td>
+                        <td>
+                            <input class="form-control" type="text" id="cliente" name="cliente" placeholder="" required="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>OBRA</td>
+                        <td>
+                            <input class="form-control" type="text" id="obra" name="obra" placeholder="" required="">
+                        </td>
+                        <td>TIPO TABLERO</td>
+                        <td>
+                            <input class="form-control" type="text" id="tipo_tablero" name="tipo_tablero" placeholder="" required="">
+                        </td>
+                        <td>FECHA</td>
+                        <td>
+                            <input class="form-control" type="text" id="fecha" name="fecha" placeholder="" required="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="cabecera needs-validation" style="border: 1px solid #96be25;  
+        border-radius: 5px; box-shadow: 0 2px 10px #96be25; margin-top: 20px; margin-left: 10px; margin-right: 10px;">
+        <h5 class="p-3 mb-2" style="text-align: center;">OPERACIÓN Y FUNCIONAMIENTO</h5>
+        <div id="miDiv">
+            
+             <!--PRUEBA DE OPERACIÓN  DESDE SELECTORES HACIA CADA CONTACTOR-->
+             <table id="miTabla" class="table table-bordered table-striped">
+                <h5 class="p-3 mb-2" style="text-align: center;">PRODUCCIÓN MECANICOS</h5>
+                <tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="4" style="text-align: center; background-color: gray;"></th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td>Dimensiones gabinete vs planos</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Tipo de contrucción de gabinete</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Tipo de pintura y color</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lamina tipo y calibre</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pintura exterior e interior</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ajuste piezas metalmecánicas</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Funcionamiento de puertas</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Funcionamieno de chapas</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Empaquetadura</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Visores</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Equipo Instalado</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Disposición elementos</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ajuste de equipo y terminales</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Torque de barrajes y equipos</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Calibres de cobre</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Electroplateado, pintado y/o termoencogible</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Disposición de barraje de acuerdo a norma</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Tornilleria completa de tapas y soportes</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Instalación de Policarbonato</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Barraje con perforaciones necesarias para <br>
+                            reservas y su tornillería.</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Barraje de neutro y tierra con todas las <br>
+                            perforaciones y su tornillería</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Marcación colores y/o letras barraje</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Accesorios adicionales</td>
+                        <td>
+                            <label for="">SI</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">NO</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                        <td>
+                            <label for="">N/A</label>
+                            <input type="checkbox" class="seleccionar"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class="my-4" style="margin-top: 20px; margin-left: 1px; margin-right: 1px;">
+            
+            <!--OBSERVACIONES-->
+            <div class="form-floating mb-3" style="margin-top: 20px; margin-left: 10px; margin-right: 10px;">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Observaciones</label>
+            </div>
+            <!--FIRMAS-->
+            <table id="miTabla" class="table table-bordered table-striped">
+                <tbody>
+
+                    <tr class="tr-inline">
+                        <td>NUMERO FALLAS ENCONTRADAS</td>
+                        <td colspan="2">
+                            <input type="text" onkeypress="return validarNumerico(event)">
+                        </td>
+                        <td>FECHA EJECUCION</td>
+                        <td colspan="2">
+                            <input id="fechaEjecucion" type="text">
+                        </td>
+                    </tr>
+
+                    <tr class="tr-inline">
+                        <td>EJECUTÓ</td>
+                        <td colspan="2">
+                            <select id="opciones" onchange="cargarFirma1(this)">
+                                <option value="DEMCO_Mesa_trabajo_1.png">Selecciona un firma</option>
+                                <option value="CRITHIAN_CARDENAS.png">Cristhian Cardenas</option>
+                                <option value="JORGE_ARBELAEZ.png">Jorge Arbelaez</option>
+                                <option value="RUBEN_GALLO.png">Ruben Gallo</option>
+                            </select>
+                            <img class="firmaImagen1" src="./img/CRITHIAN_CARDENAS.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                            <img class="firmaImagen1" src="./img/JORGE_ARBELAEZ.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                            <img class="firmaImagen1" src="./img/RUBEN_GALLO.png" alt="Firma Ejecutor" style="max-width: 100px; max-height: 100px;">
+                        </td>
+                    </tr>
+            </table>
+            <hr class="my-4" style="margin-top: 20px; margin-left: 1px; margin-right: 1px;">
+        </div>
+    </section>
+    
+    <div class="btn-container">
+        <button id="guardar" type="button" class="btn btn-primary mb-3" onclick="imprimir()">GUARDAR</button>
+    </div>
+    
+</body>
+</html>
